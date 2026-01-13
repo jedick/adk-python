@@ -1236,6 +1236,7 @@ def cli_web(
       host=host,
       port=port,
       reload=reload,
+      log_level=log_level.lower(),
   )
 
   server = uvicorn.Server(config)
